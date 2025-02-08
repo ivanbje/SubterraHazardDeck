@@ -7,7 +7,7 @@ p{
 	color: #96A1B8;
 	margin-top: 0em;  
 	margin-bottom: 0.1em;
-	font-size:1em; 
+	font-size:2em; 
 	font-weight: bold; 
 	font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	text-align: center;
@@ -33,7 +33,9 @@ h1{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  align-self: center;
+  font-size: 2em;
+  margin: 0.5em;
 }
 .button:hover {
 	background-image: linear-gradient(90deg, #aac7ff 0%, #c6e3ff 20%, #aac7ff 50%, #aac7ff 100%);
@@ -45,9 +47,9 @@ h1{
 
 #themediv {float:right;}
 
-.playerAmounts {width:30em; ;margin: 0 auto;}
-.difficultyAmount {width:25em; ;margin: 0 auto; }
-.drawCard {width:5em; ;margin: 0 auto; }
+.playerAmounts { margin: 0 auto;text-align: center; align-content: center;}
+.difficultyAmount {margin: 0 auto;text-align: center; align-content: center;}
+.drawCard {margin: 0 auto;text-align: center; align-content: center;}
 
 .block {
 	display: block;
