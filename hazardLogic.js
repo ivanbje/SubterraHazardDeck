@@ -132,6 +132,9 @@ function setDifficulty(difficultyNum)
   drawButton.style.display = 'block'
     const cardInfo = document.getElementById("cardInfo");
   cardInfo.innerHTML = "Draw your first card";
+  console.log(deck[cardIndex-1])
+  const deckInfo = document.getElementById("deckInfo");
+  deckInfo.innerHTML = "Deck size:"+String(deck.length-cardIndex)
 }
 
 function drawCard()
@@ -145,4 +148,6 @@ function drawCard()
   cardInfo.innerHTML = newCard + addText;
   console.log(cardIndex)
   console.log(deck[cardIndex-1])
+  const deckInfo = document.getElementById("deckInfo");
+  deckInfo.innerHTML = "Deck size:"+String(deck.length-cardIndex)+" cards drawn:"+cardIndex;
 }
