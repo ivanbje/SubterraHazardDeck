@@ -7,7 +7,7 @@ p{
 	color: #96A1B8;
 	margin-top: 0em;  
 	margin-bottom: 0.1em;
-	font-size:3em; 
+	font-size:1em; 
 	font-weight: bold; 
 	font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	text-align: center;
@@ -45,8 +45,8 @@ h1{
 
 #themediv {float:right;}
 
-.playerAmounts {width:25em; ;margin: 0 auto;}
-.difficultyAmount {width:24em; ;margin: 0 auto; }
+.playerAmounts {width:30em; ;margin: 0 auto;}
+.difficultyAmount {width:25em; ;margin: 0 auto; }
 .drawCard {width:5em; ;margin: 0 auto; }
 
 .block {
