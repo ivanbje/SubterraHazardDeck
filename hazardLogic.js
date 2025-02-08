@@ -23,6 +23,7 @@ uniqueCards = [
 sugList = ['Choose number of players']
 playerNumber = 0;
 cardIndex=0;
+redraws=0;
 
 function shuffle(array) {
   let currentIndex = array.length;
@@ -135,8 +136,13 @@ function setDifficulty(difficultyNum)
 
 function drawCard()
 {
+  if(cardIndex>0){oldCard = deck[cardIndex-1];} else {oldCard="";}
+  newCard = deck[cardIndex++];
+  addText="";
+
+  if(newCard==oldCard){redraws++; addText="<br>(again: "+String(redraws)+")"} else {redraws=0;}
   const cardInfo = document.getElementById("cardInfo");
-  cardInfo.innerHTML = deck[cardIndex++];
+  cardInfo.innerHTML = newCard + addText;
   console.log(cardIndex)
   console.log(deck[cardIndex-1])
 }
